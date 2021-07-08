@@ -1,5 +1,3 @@
-//This file does not need any changes
-
 import java.util.Random;
 
 public enum OperationType {
