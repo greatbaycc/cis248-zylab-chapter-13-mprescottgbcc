@@ -12,4 +12,6 @@ public interface MathQuestionable {
     String getQuestion();
 
     int getCorrectAnswer();
+
+    OperationType getOperationType();
 }

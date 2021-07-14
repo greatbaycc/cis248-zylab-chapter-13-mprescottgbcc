@@ -22,8 +22,8 @@ public abstract class MathQuestion implements MathQuestionable {
         return y;
     }
 
-    public String getQuestion(OperationType op) {
-        return "What is " + x + ' ' + op.getSymbol() + ' ' + y + '?';
+    public String getQuestion() {
+        return x + " " + getOperationType().getSymbol() + " " + y;
     }
 }
 
@@ -37,12 +37,12 @@ class AdditionQuestion extends MathQuestion {
         super(px, py);
     }
 
-    public String getQuestion() {
-        return super.getQuestion(OperationType.ADD);
-    }
-
     public int getCorrectAnswer() {
         return getX() + getY();
+    }
+
+    public OperationType getOperationType() {
+        return OperationType.ADD;
     }
 }
 
@@ -61,12 +61,12 @@ class DivisionQuestion extends MathQuestion {
         super(px, py);
     }
 
-    public String getQuestion() {
-        return super.getQuestion(OperationType.DIVIDE);
-    }
-
     public int getCorrectAnswer() {
         return getX() / getY();
+    }
+
+    public OperationType getOperationType() {
+        return OperationType.DIVIDE;
     }
 }
 
@@ -85,12 +85,12 @@ class ExponentQuestion extends MathQuestion {
         super(px, py);
     }
 
-    public String getQuestion() {
-        return super.getQuestion(OperationType.EXPONENT);
-    }
-
     public int getCorrectAnswer() {
         return (int) Math.pow(getX(), getY());
+    }
+
+    public OperationType getOperationType() {
+        return OperationType.EXPONENT;
     }
 }
 
@@ -109,12 +109,12 @@ class ModuloQuestion extends MathQuestion {
         super(px, py);
     }
 
-    public String getQuestion() {
-        return super.getQuestion(OperationType.MODULO);
-    }
-
     public int getCorrectAnswer() {
         return getX() % getY();
+    }
+
+    public OperationType getOperationType() {
+        return OperationType.MODULO;
     }
 }
 
@@ -133,12 +133,12 @@ class MultiplicationQuestion extends MathQuestion {
         super(px, py);
     }
 
-    public String getQuestion() {
-        return super.getQuestion(OperationType.MULTIPLY);
-    }
-
     public int getCorrectAnswer() {
         return getX() * getY();
+    }
+
+    public OperationType getOperationType() {
+        return OperationType.MULTIPLY;
     }
 }
 
@@ -157,11 +157,11 @@ class SubtractionQuestion extends MathQuestion {
         super(px, py);
     }
 
-    public String getQuestion() {
-        return super.getQuestion(OperationType.SUBTRACT);
-    }
-
     public int getCorrectAnswer() {
         return getX() - getY();
+    }
+
+    public OperationType getOperationType() {
+        return OperationType.SUBTRACT;
     }
 }
