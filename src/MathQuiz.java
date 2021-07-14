@@ -14,11 +14,10 @@ public class MathQuiz extends Application {
     private static boolean isChecking = true;
     private static int questionCount = 1;
     private static int score = 0;
-    private final int NUM_QUESTIONS = 5;
+    private final int NUM_QUESTIONS = 10;
     private TextField answerField;
     private Label questionLabel;
     private Label resultLabel;
-    private Label finalResultLabel;
     private Button answerButton;
 
     /**
