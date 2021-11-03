@@ -1,8 +1,8 @@
 # CIS248 Module 4 zyLab
 ## FALL 2021
 
-- Name:
-- Date:
+- Name: Meg Prescott
+- Date: 2021-11-03
 
 
 ### Chapter 13 zyLab: Math Quiz GUI

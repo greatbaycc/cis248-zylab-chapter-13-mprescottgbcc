@@ -16,6 +16,7 @@ public class MathQuiz extends Application {
     private static int score = 0;
     private final int NUM_QUESTIONS = 10;
     private TextField answerField;
+    private Label answerLabel;
     private Label questionLabel;
     private Label resultLabel;
     private Button answerButton;
@@ -62,7 +63,7 @@ public class MathQuiz extends Application {
         resultLabel = new Label();
         questionLabel = new Label(question.getQuestion());
 
-        Label answerLabel = new Label("Answer");
+        answerLabel = new Label("Answer");
 
         answerField = new TextField();
         answerField.setEditable(true);
