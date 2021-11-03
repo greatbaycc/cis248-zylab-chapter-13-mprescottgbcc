@@ -1,3 +1,5 @@
+package mathquiz;
+
 import java.util.Random;
 
 public enum OperationType {

@@ -1,3 +1,5 @@
+package mathquiz;
+
 public abstract class MathQuestion implements MathQuestionable {
     private final int x;
     private final int y;
